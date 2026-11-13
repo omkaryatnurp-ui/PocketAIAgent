@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pocket AI Agent</string>
+    <string name="channel_task_updates">Task Updates</string>
+    <string name="channel_task_updates_desc">Notifications for AI coding task progress and completion</string>
+    <string name="channel_service">Active Runtime</string>
+    <string name="channel_service_desc">Persistent notification for running background AI tasks</string>
+    <string name="channel_alerts">System &amp; Quota Alerts</string>
+    <string name="channel_alerts_desc">Alerts for API quota limits, approvals, and connection issues</string>
+</resources>
