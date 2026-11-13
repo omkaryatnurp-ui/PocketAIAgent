@@ -21,6 +21,7 @@ import com.pocketai.agent.data.project.WorkspaceManager
 import com.pocketai.agent.data.project.ZipExporter
 import com.pocketai.agent.data.provider.ProviderRegistry
 import com.pocketai.agent.data.security.SecureKeyStorage
+import com.pocketai.agent.data.service.NotificationHelper
 import com.pocketai.agent.data.service.TaskExecutionService
 import com.pocketai.agent.ui.screens.*
 import com.pocketai.agent.ui.theme.*
