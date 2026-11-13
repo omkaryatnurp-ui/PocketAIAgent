@@ -21,16 +21,11 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-          cache: 'gradle'
 
-      - name: Grant Execute Permission to Gradlew
-        run: chmod +x gradlew
-
-      - name: Run Unit Tests
-        run: ./gradlew test --stacktrace
-
-      - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace
+      - name: Run Unit Tests and Build Debug APK
+        env:
+          GRADLE_USER_HOME: ${{ runner.temp }}/gradle-home
+        run: ./gradlew --no-daemon clean test assembleDebug --stacktrace
 
       - name: Upload Debug APK Artifact
         uses: actions/upload-artifact@v4
